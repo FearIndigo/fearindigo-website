@@ -29,10 +29,10 @@ import IconGames from "./icons/IconGames.vue";
     <br />
     Check out the early access version of
     <a
-      href="https://play.google.com/store/apps/details?id=com.FearIndigo.AussieBall"
+      href="https://play.google.com/store/apps/details?id=com.FearIndigo.AussieBallQuantum"
       target="_blank"
-      title="Aussie Ball on google play"
-      >Aussie Ball</a
+      title="Sports Brawl on Google Play"
+      >Sports Brawl</a
     >
     on the google play store.
   </PageItem>
