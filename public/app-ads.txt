@@ -1,5 +1,7 @@
 # Facebook
 facebook.com, 1175569186643569, RESELLER, c3e20eee3f780d68
+facebook.com, 580639180229256, RESELLER, c3e20eee3f780d68
+facebook.com, 640418294521946, RESELLER, c3e20eee3f780d68
 
 # Unity
 adcolony.com, 0a0f72cd66122f31, RESELLER, 1ad675c9de6b5176
