@@ -1,125 +1,29 @@
 <script setup>
-import { RouterLink, RouterView } from "vue-router";
 import SiteHeader from "@/components/SiteHeader.vue";
 </script>
 
 <template>
-  <header>
-    <img
-      alt="Fear Indigo"
-      class="logo"
-      height="125"
-      src="@/assets/FearIndigo-Logo.svg"
-      width="125"
-    />
-
-    <div class="wrapper">
+  <div
+    class="flex justify-center items-center bg-gradient-to-b from-purple to-purple min-h-screen p-4 text-green overflow-hidden"
+  >
+    <div
+      class="grid w-full h-full gap-16 grid-rows-[repeat(2,auto)] grid-cols-1 lg:grid-rows-1 lg:grid-cols-[repeat(2,auto)] max-w-[1000px] mx-auto items-center max-h-[1000px]"
+    >
       <SiteHeader />
 
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-      </nav>
+      <main
+        class="relative w-full h-full max-w-[350px] mx-auto flex flex-col items-center lg:justify-center"
+      >
+        <RouterView v-slot="{ Component, route }">
+          <Transition>
+            <Component :is="Component" :key="route.path" />
+          </Transition>
+        </RouterView>
+      </main>
     </div>
-  </header>
-
-  <RouterView />
+  </div>
 </template>
 
 <style>
-@import "@/assets/base.css";
-
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-
-  font-weight: normal;
-}
-
-header {
-  line-height: 1.5;
-  max-height: 100vh;
-}
-
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
-
-a {
-  text-decoration: none;
-  color: var(--green-dark);
-  transition: 0.4s;
-}
-
-@media (hover: hover) {
-  a:hover {
-    color: var(--green);
-    background: var(--indigo);
-  }
-}
-
-nav {
-  width: 100%;
-  font-size: 12px;
-  text-align: center;
-  margin-top: 2rem;
-}
-
-nav a.router-link-exact-active {
-  color: var(--green);
-}
-
-nav a.router-link-exact-active:hover {
-  background-color: transparent;
-}
-
-nav a {
-  display: inline-block;
-  padding: 0 1rem;
-  border-left: 1px solid var(--green-dark);
-}
-
-nav a:first-of-type {
-  border: 0;
-}
-
-@media (min-width: 1024px) {
-  body {
-    display: flex;
-    place-items: center;
-  }
-
-  #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
-  }
-
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  nav {
-    text-align: left;
-    margin-left: -1rem;
-    font-size: 1rem;
-
-    padding: 1rem 0;
-    margin-top: 1rem;
-  }
-}
+@import "index.css";
 </style>

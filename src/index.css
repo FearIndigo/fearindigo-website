@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    html {
+        @apply font-default;
+    }
+    
+    p {
+        @apply font-sans;
+    }
+}
+
+.v-enter-active,
+.v-leave-active {
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.v-enter-from,
+.v-leave-to {
+    opacity: 0;
+}
+
+.v-enter-from {
+    transform: translateX(-100%);
+
+    @media (min-width: 1024px) {
+        transform: translateY(-100%);
+    }
+}
+
+.v-leave-to {
+    transform: translateX(100%);
+
+    @media (min-width: 1024px) {
+        transform: translateY(100%);
+    }
+}
+
+.v-leave-active,
+.v-leave-to {
+    position: absolute;
+}
