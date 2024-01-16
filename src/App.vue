@@ -4,7 +4,7 @@ import SiteHeader from "@/components/SiteHeader.vue";
 
 <template>
   <div
-    class="flex justify-center items-center bg-gradient-to-b from-purple to-purple min-h-screen p-4 text-green overflow-hidden"
+    class="flex justify-center items-center bg-gradient-to-b from-purple to-purple min-h-screen p-8 text-green overflow-hidden"
   >
     <div
       class="grid w-full h-full gap-16 grid-rows-[repeat(2,auto)] grid-cols-1 lg:grid-rows-1 lg:grid-cols-[repeat(2,auto)] max-w-[1000px] mx-auto items-center max-h-[1000px]"
