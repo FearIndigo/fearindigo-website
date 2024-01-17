@@ -5,10 +5,9 @@
     >
       <img
         alt="Fear Indigo Logo"
-        height="auto"
         src="/logo.svg"
         width="208"
-        class="bg-orange p-2 w-52 h-auto lg:w-64"
+        class="w-52 h-auto lg:w-64"
       />
 
       <div
