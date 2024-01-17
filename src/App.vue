@@ -7,12 +7,12 @@ import SiteHeader from "@/components/SiteHeader.vue";
     class="flex justify-center items-center bg-gradient-to-b from-purple to-purple min-h-screen p-8 text-green overflow-hidden"
   >
     <div
-      class="grid w-full h-full gap-16 grid-rows-[repeat(2,auto)] grid-cols-1 lg:grid-rows-1 lg:grid-cols-[repeat(2,auto)] max-w-[1000px] mx-auto items-center max-h-[1000px]"
+      class="grid w-full h-full gap-16 grid-rows-[repeat(2,auto)] grid-cols-[auto] lg:grid-rows-[auto] lg:grid-cols-[repeat(2,auto)] max-w-[1000px] mx-auto items-center"
     >
       <SiteHeader />
 
       <main
-        class="relative w-full h-full max-w-[350px] mx-auto flex flex-col items-center lg:justify-center"
+        class="relative w-80 h-80 mx-auto flex flex-col items-center justify-center"
       >
         <RouterView v-slot="{ Component, route }">
           <Transition>

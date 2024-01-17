@@ -12,6 +12,12 @@
     }
 }
 
+@font-face {
+    font-family: 'Righteous';
+    font-display: swap;
+    src: url('/Righteous-Regular.ttf') format('truetype');
+}
+
 .v-enter-active,
 .v-leave-active {
     transition: opacity 0.5s ease-out, transform 0.5s ease-out;
@@ -23,18 +29,18 @@
 }
 
 .v-enter-from {
-    transform: translateX(-100%);
+    transform: translateX(-200%);
 
     @media (min-width: 1024px) {
-        transform: translateY(-100%);
+        transform: translateY(-200%);
     }
 }
 
 .v-leave-to {
-    transform: translateX(100%);
+    transform: translateX(200%);
 
     @media (min-width: 1024px) {
-        transform: translateY(100%);
+        transform: translateY(200%);
     }
 }
 
